@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Agent 额度</title>
+<link rel="stylesheet" href="palette.css">
+<link rel="stylesheet" href="styles.css">
+<script>if (new URLSearchParams(location.search).has("embed")) document.documentElement.classList.add("embed");</script>
+</head>
+<body>
+<main class="card" id="card">
+  <span class="flag" id="flag" hidden aria-hidden="true"></span>
+
+  <section class="engine" id="codexEngine" data-engine="codex" data-tone="ok">
+    <div class="engine-top">
+      <span class="engine-name">Codex</span>
+      <span class="meta" id="codexMeta">—</span>
+    </div>
+    <div class="engine-row">
+      <div class="pct"><b id="codexSessionRemain">—</b><i>%</i></div>
+      <div class="tracks">
+        <div class="bar" id="codexSessionBar" role="img" aria-label="Codex 5 小时额度">
+          <div class="ticks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <div class="fill" id="codexSessionFill"></div>
+          <div class="time-marker" id="codexSessionMarker" hidden aria-hidden="true"></div>
+        </div>
+        <div class="week-line" id="codexWeekLine">
+          <div class="mini-bar" id="codexWeekBar" role="img" aria-label="Codex 本周额度">
+            <div class="fill" id="codexWeekFill"></div>
+            <div class="time-marker" id="codexWeekMarker" hidden aria-hidden="true"></div>
+          </div>
+          <span class="week-pct" id="codexWeekPct">—</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="engine" id="agyEngine" data-engine="antigravity" data-tone="ok">
+    <div class="engine-top">
+      <span class="engine-name">Antigravity</span>
+      <span class="meta" id="agyMeta">—</span>
+    </div>
+    <div class="engine-row">
+      <div class="pct"><b id="agySessionRemain">—</b><i>%</i></div>
+      <div class="tracks">
+        <div class="bar" id="agySessionBar" role="img" aria-label="Antigravity 5 小时额度">
+          <div class="ticks" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+          <div class="fill" id="agySessionFill"></div>
+          <div class="time-marker" id="agySessionMarker" hidden aria-hidden="true"></div>
+        </div>
+        <div class="week-line" id="agyWeekLine">
+          <div class="mini-bar" id="agyWeekBar" role="img" aria-label="Antigravity 本周额度">
+            <div class="fill" id="agyWeekFill"></div>
+            <div class="time-marker" id="agyWeekMarker" hidden aria-hidden="true"></div>
+          </div>
+          <span class="week-pct" id="agyWeekPct">—</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="usage" id="usageSection" data-state="off">
+    <div class="usage-main">
+      <span class="usage-dot-status" aria-hidden="true"></span>
+      <span class="usage-label">今日</span>
+      <span class="usage-metrics" id="usageMetrics">
+        <b id="usageTokens">—</b>
+        <span class="usage-sep">·</span>
+        <b id="usageCost">—</b>
+        <span class="usage-sep">·</span>
+        <span class="usage-cache" id="usageCache">—</span>
+      </span>
+      <span class="usage-offline" id="usageOffline">未连接</span>
+    </div>
+    <a class="usage-pill" id="usageOpen" href="http://127.0.0.1:7777" target="_blank" rel="noreferrer">看板 ↗</a>
+  </div>
+</main>
+
+<script src="palette.js"></script>
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

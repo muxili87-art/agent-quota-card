@@ -1,0 +1,46 @@
+{
+  "name": "titanium-minimal",
+  "surface": {
+    "top": "#161920",
+    "mid": "#111319",
+    "bottom": "#0B0D11",
+    "glow": "rgba(255, 255, 255, 0.055)",
+    "border": "rgba(255, 255, 255, 0.08)",
+    "ink": "#F1F5F9",
+    "label": "#94A3B8",
+    "quiet": "#64748B"
+  },
+  "engines": {
+    "codex": {
+      "accent": "#E2E8F0",
+      "fillFrom": "#94A3B8",
+      "fillTo": "#E2E8F0"
+    },
+    "antigravity": {
+      "accent": "#BFDBFE",
+      "fillFrom": "#60A5FA",
+      "fillTo": "#BFDBFE"
+    }
+  },
+  "thresholds": {
+    "warn": 30,
+    "crit": 15
+  },
+  "tiers": {
+    "ok": {
+      "accent": "#E2E8F0",
+      "fillFrom": "#94A3B8",
+      "fillTo": "#E2E8F0"
+    },
+    "warn": {
+      "accent": "#F59E0B",
+      "fillFrom": "#D97706",
+      "fillTo": "#FBBF24"
+    },
+    "crit": {
+      "accent": "#EF4444",
+      "fillFrom": "#DC2626",
+      "fillTo": "#F87171"
+    }
+  }
+}

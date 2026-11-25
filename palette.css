@@ -1,0 +1,11 @@
+/* 由 app/Scripts/gen-palette.py 从 palette.json 生成，勿手改。 */
+:root {
+  --ink: #F1F5F9;
+  --label: #94A3B8;
+  --quiet: #64748B;
+  --surface-top: #161920;
+  --surface-mid: #111319;
+  --surface-bottom: #0B0D11;
+  --surface-glow: rgba(255, 255, 255, 0.055);
+  --surface-border: rgba(255, 255, 255, 0.08);
+}
